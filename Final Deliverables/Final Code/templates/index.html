@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+      .boxed{
+        background-color: #1F2833;
+        background-repeat: no-repeat;
+        height: 25%;
+        width: 120%;
+        position: fixed;
+        top: 0px;
+        font-size: 50px;
+        font-family:inherit;
+        color:#66FCF1;
+      }
+      .boxed1{
+        background-color: #1F2833;
+        position: fixed;
+        bottom: 0px;
+        height: 75%;
+        width: 120%;
+        
+        
+      }
+
+      .boxed2{
+        background-color: #1F2833;
+        position: fixed;
+        bottom: 0px;
+        height: 75%;
+        width: 120%;
+        
+      }
+     
+
+    </style>
+
+    <title>Handwritten Digit Recognition</title>
+  </head>
+  <body>
+    <div class="boxed">
+    <h1 style="position:fixed; left: 120px;">Handwritten Digit Recognition</h1>
+    </div>
+    
+
+    <div class="boxed2">
+      <div class="boxed1">
+        <ul style="color:white;  top: 250px; padding-left: 27%; font-size:23px;">
+          <li>Choose the image to be recognized from your local storage.</li>
+          <li>Click the recognize button.</li>
+          <li>The predicted digit will be displayed on the screen.</li>
+      </ul>
+  
+      </div>
+       
+
+    <form action="/web" method="post" enctype="multipart/form-data">
+      
+     <input style="position:fixed; font-size:20px; left:600px; top:340px; height: 25px; color:white;" type="file" name="file">
+      
+      <input style="position:fixed; font-size:25px; left:500px; top:430px; height: 40px; width: 30%;height: 7.5%;color:#1F2833;border-radius:20px;background-color:#66FCF1;" type="submit"  value="Recognize">
+    </form>
+    <p style="position: fixed;bottom: 0;left: 440px;font-size: 14px;color:#66FCF1;">This is the prediction page where we get to choose the image from our local system and predict the output.</p>
+
+    </div>
+  </body>
+</html>
